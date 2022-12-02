@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../assets/symbol-scatter-haikei.svg");
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+* {
+  font-family: "Montserrat Alternates", sans-serif;
+  box-sizing: border-box;
+}
+.form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 190px;
+  margin: 3rem auto 2rem auto;
+  width: 300px;
+  background-color: #e2d087;
+  border-radius: 12px;
+}
+
+.form > input {
+  border: none;
+  padding: 3px 6px;
+  border-radius: 12px;
+}
+.form > textarea {
+  border: none;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 6px;
+  border-radius: 12px;
+}
+.form > button {
+  margin: auto auto 0 auto;
+  width: 50px;
+}
+.container h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 1rem 1rem;
+  padding: 8px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 260px;
+  max-height: auto;
+  background-color: #e6ecbf;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #f0f5f066;
+}
+.card-header {
+  width: 100%;
+  top: -15px;
+  left: 0;
+  background-color: #e2d087;
+  height: 30px;
+  border-radius: 12px 12px 0 0;
+  position: absolute;
+}
+
+.card-name {
+  margin-top: 12px;
+  height: auto;
+  word-break: break-all;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.card-name > input {
+  flex: 1;
+}
+
+.card-name > button {
+  background-color: transparent;
+}
+.card-name > h3 {
+  flex: 1;
+  text-align: center;
+  border-bottom: 2px dotted #00000099;
+}
+
+.card-container textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.card-container > button {
+  width: 40px;
+  margin: 12px 0 12px auto;
+}
+
+.note-content::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+  background-color: #cfb95f;
+}
+.note-content::-webkit-scrollbar-thumb {
+  background-color: #b9960a;
+}
+
+.note-content {
+  overflow-y: auto;
+}
+.buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  width: 100%;
+  gap: 6px;
+}
+* > button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+}
+
+* > button:hover {
+  background-color: #ffffff99;
+}
+* > button:active {
+  background-color: #ffffff33;
+}
+
+.loading-container {
+  position: fixed;
+  display: flex;
+  background-color: #bc832100;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.lds-dual-ring {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 3px #f0f407;
+  border-color: #ff9900 #c6c6c6 #c6c6c6 #c6c6c6;
+  animation: lds-dual-ring 1s ease-in-out infinite;
+}
+@keyframes lds-dual-ring {
+  0%,
+  10% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
