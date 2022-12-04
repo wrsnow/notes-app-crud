@@ -140,6 +140,7 @@ function Login({ setUserId, setIsLoggedIn, setCurrentUser }) {
         <Form onSubmit={handleSignUp}>
           <label htmlFor="">Email</label>
           <input
+            required
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             name="email"
@@ -151,6 +152,7 @@ function Login({ setUserId, setIsLoggedIn, setCurrentUser }) {
           <br />
           <label htmlFor="">Username</label>
           <input
+            required
             onChange={(e) => setUsername(e.target.value)}
             value={username}
             name="username"
@@ -163,6 +165,7 @@ function Login({ setUserId, setIsLoggedIn, setCurrentUser }) {
           <br />
           <label htmlFor="">Password</label>
           <input
+            required
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             name="password"

@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background: url("../assets/symbol-scatter-haikei.svg");
-  width: 100vw;
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -141,10 +140,10 @@ body {
 }
 
 * > button:hover {
-  background-color: #ffffff99;
+  background-color: #d3c463;
 }
 * > button:active {
-  background-color: #ffffff33;
+  background-color: #e5cd33;
 }
 
 .loading-container {

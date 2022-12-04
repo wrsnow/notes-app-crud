@@ -54,9 +54,20 @@ function App() {
   };
 
   if (error) {
+    const styles = {
+      backgroundColor: "#252525",
+      padding: "3rem",
+      color: "white",
+      textAlign: "center",
+    };
     return (
       <>
-        <h1>Server offline.</h1>
+        <h1 style={styles}>
+          Something went wrong.
+          <br />
+          <br />
+          <br />
+        </h1>
       </>
     );
   }
